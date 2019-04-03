@@ -43,11 +43,13 @@ python CalAcc.py ResultFilePath AnswerFilePath
 ## Other Stuff
 /Models contains the models trained for 1000 iterations(Not sure thou)<br>
 /Result contains a lot of results for models that ran for iterations ranging from 1 to 2000<br>
-/TestArea contains all the models that ran for iterations ranging from 1 to 2000
+/TestArea contains all the models that ran for iterations ranging from 1 to 2000<br>
+IterVSAcc is a graph of iterations vs accuracy from the experiments I did
 
 ## Built With
 
-* Python 3.6.0 :: Anaconda custom (64-bit)
+* C (Mostly)
+* Python 3.6.0 :: Anaconda custom (64-bit) (Only for calculating accuracy)
 
 ## Authors
 
