@@ -39,15 +39,15 @@ void trainModel(HMM *Model, const char TrainDataPath[], const int Iteration, con
 		// Close train data
 		fclose(TrainDataFile);
 
-		if(iter % 10 == 0){
-			char tempModelName[1024] = {'\0'};
-			strncpy(tempModelName, OutputModelPath, 17);
-			sprintf(tempModelName, "%s_%d.txt", tempModelName, iter+1);
-			printf("Save current model to: %s\n", tempModelName);
-			FILE *fp = open_or_die(tempModelName, "w+");
-			dumpHMM(fp, Model);
-			fclose(fp);
-		}
+		// if(iter % 10 == 0){
+		// 	char tempModelName[1024] = {'\0'};
+		// 	strncpy(tempModelName, OutputModelPath, 17);
+		// 	sprintf(tempModelName, "%s_%d.txt", tempModelName, iter+1);
+		// 	printf("Save current model to: %s\n", tempModelName);
+		// 	FILE *fp = open_or_die(tempModelName, "w+");
+		// 	dumpHMM(fp, Model);
+		// 	fclose(fp);
+		// }
 	}
 	
 	return;
